@@ -1,15 +1,14 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Home from "../../pages";
+import { Fragment } from "react";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const Layout = (props) => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <Home />
-        </Col>
-      </Row>
-    </Container>
+    <Fragment>
+      <Navigation />
+      <main>{props.children}</main>
+      <Footer />
+    </Fragment>
   );
 };
 
