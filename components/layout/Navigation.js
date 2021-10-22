@@ -7,24 +7,29 @@ import {
   NavItem,
   NavLink,
 } from "react-bootstrap";
-import classes from "./Navigation.module.css";
+import classes from "./Navigation.module.scss";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 
 const Navigation = () => {
   return (
-    <Navbar sticky="top" collapseOnSelect expand="lg">
+    <Navbar
+      sticky="top"
+      collapseOnSelect
+      expand="lg"
+      className={`shadow ${classes.navbar}`}
+    >
       <Container>
         <NavbarBrand href="#">
           <Image
             src="/logo_transparent_white.png"
-            className={classes["nav-image"]}
+            className={classes["image"]}
             alt="logo"
           />
           Web at Speed
         </NavbarBrand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <NavbarCollapse>
-          <Nav as="ul" className="ms-auto">
+          <Nav as="ul" className={`ms-auto ${classes.nav}`}>
             <NavItem as="li">
               <NavLink tabIndex={0} href="#dev">
                 Development
