@@ -1,9 +1,10 @@
 import { Container } from "react-bootstrap";
+import Development from "../components/divisions/Development";
 
 const Home = () => {
   return (
     <Container>
-      <h1>Web at Speed</h1>
+      <Development />
     </Container>
   );
 };

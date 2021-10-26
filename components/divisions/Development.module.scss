@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.my-lg-10 {
+  @include media-breakpoint-up(xl) {
+    margin-top: $spacer*6 !important;
+    margin-bottom: $spacer*6 !important;
+  }
+}
+
+.heading {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: $adrift-in-dreams;
+  padding-bottom: $spacer;
+}
+
+.description {
+  font-size: 25px;
+  color: $adrift-in-dreams;
+}
+
+.tech {
+  background: #e3f3cc;
+  border-radius: 20px;
+  padding: $spacer * 1.5;
+  color: $there-we-could-sail;
+  font-size: 1.6rem;
+}
+
+.tech-names {
+  color: $slate-gray;
+  font-size: 25px;
+}
