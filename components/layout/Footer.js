@@ -1,9 +1,22 @@
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
+import classes from "./Footer.module.scss";
 
 const Footer = () => {
   return (
     <footer>
-      <Container>footer</Container>
+      <Container fluid className="p-0">
+        <Image src="landscape.png" fluid alt="landscape" />
+        <div className={classes.footer}>
+          footer
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </Container>
     </footer>
   );
 };
