@@ -13,8 +13,8 @@ const Development = () => {
     <Fragment>
       <Row id="dev" className={`mt-3 mt-md-5 ${classes["my-lg-10"]}`}>
         <Col lg={6} className="pe-0 pe-md-5">
-          <h2 className={classes.heading}>Software Development for Hire</h2>
-          <p className={classes.description}>
+          <h2>Software Development for Hire</h2>
+          <p>
             When it comes to web projects, saving time is often a key factor. We
             provide software development in the web field ranging from simple
             support through to overall project management.
@@ -75,7 +75,7 @@ const Development = () => {
           />
         </Col>
       </Row>
-      <Row>
+      <Row className="mb-5">
         <Col
           lg={12}
           className={`text-center list-group list-group-horizontal align-items-center ${classes["tech-names"]}`}

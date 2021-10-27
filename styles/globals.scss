@@ -1,8 +1,39 @@
+@import "colors";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: $adrift-in-dreams;
+  padding-bottom: $spacer;
+}
+
+p {
+  font-size: 25px;
+  color: $adrift-in-dreams;
+}
+
+.darker {
+  background-color: $white-sand;
+  margin-top: $spacer*14;
+  padding: $spacer*6 0 $spacer*5 0;
+}
+
+.skew.container-fluid {
+  transform: skewY(-4deg);
+
+  .container {
+    transform: skewY(4deg);
+  }
 }
