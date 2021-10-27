@@ -16,7 +16,7 @@ const Navigation = () => {
       sticky="top"
       collapseOnSelect
       expand="lg"
-      className={`shadow ${classes.navbar}`}
+      className={`shadow bg-light ${classes.navbar}`}
     >
       <Container>
         <NavbarBrand href="#">
