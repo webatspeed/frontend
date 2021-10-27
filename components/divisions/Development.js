@@ -37,12 +37,42 @@ const Development = () => {
           lg={8}
           className="list-group list-group-horizontal align-items-center"
         >
-          <FontAwesomeIcon icon={faJava} size="3x" className="flex-fill" />
-          <FontAwesomeIcon icon={faLeaf} size="2x" className="flex-fill" />
-          <FontAwesomeIcon icon={faPhp} size="3x" className="flex-fill" />
-          <FontAwesomeIcon icon={faLaravel} size="3x" className="flex-fill" />
-          <FontAwesomeIcon icon={faSymfony} size="3x" className="flex-fill" />
-          <FontAwesomeIcon icon={faReact} size="3x" className="flex-fill" />
+          <FontAwesomeIcon
+            icon={faJava}
+            size="3x"
+            className="flex-fill"
+            title="Java"
+          />
+          <FontAwesomeIcon
+            icon={faLeaf}
+            size="2x"
+            className="flex-fill"
+            title="Spring Boot"
+          />
+          <FontAwesomeIcon
+            icon={faPhp}
+            size="3x"
+            className="flex-fill"
+            title="PHP"
+          />
+          <FontAwesomeIcon
+            icon={faLaravel}
+            size="3x"
+            className="flex-fill"
+            title="Laravel"
+          />
+          <FontAwesomeIcon
+            icon={faReact}
+            size="3x"
+            className="flex-fill"
+            title="React.js"
+          />
+          <FontAwesomeIcon
+            icon={faSymfony}
+            size="3x"
+            className="flex-fill"
+            title="Symfony"
+          />
         </Col>
       </Row>
       <Row>
@@ -54,8 +84,8 @@ const Development = () => {
           <span className="flex-fill">Spring Boot</span>
           <span className="flex-fill">PHP</span>
           <span className="flex-fill">Laravel</span>
+          <span className="flex-fill">React.js</span>
           <span className="flex-fill">Symfony</span>
-          <span className="flex-fill">React</span>
           <span className="flex-fill">and more...</span>
         </Col>
       </Row>
