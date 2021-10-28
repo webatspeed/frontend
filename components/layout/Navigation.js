@@ -41,8 +41,8 @@ const Navigation = () => {
               </NavLink>
             </NavItem>
             <NavItem as="li">
-              <NavLink tabIndex={2} href="#usability">
-                Usability
+              <NavLink tabIndex={2} href="#fullstack">
+                Full Stack
               </NavLink>
             </NavItem>
             <NavItem as="li">
