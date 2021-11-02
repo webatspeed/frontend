@@ -30,6 +30,16 @@ p {
   padding: $spacer*6 0 $spacer*5 0;
 }
 
+.painted {
+  background-color: $there-we-could-sail;
+  margin: $spacer*10 0;
+  padding: $spacer*6 0 $spacer*5 0;
+
+  p, h2 {
+    color: $mercury;
+  }
+}
+
 .skew.container-fluid {
   transform: skewY(-4deg);
 
