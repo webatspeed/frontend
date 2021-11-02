@@ -19,7 +19,7 @@ const Navigation = () => {
       className={`shadow bg-light ${classes.navbar}`}
     >
       <Container>
-        <NavbarBrand href="#">
+        <NavbarBrand className={classes.brand} href="#">
           <Image
             src="/logo_transparent_white.png"
             className={classes["image"]}
