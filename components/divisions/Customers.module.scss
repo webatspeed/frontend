@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.sub-card {
+  line-height: 1rem;
+
+  a {
+    color: $there-we-could-sail;
+
+    &:hover {
+      color: $sea-showing-green;
+    }
+  }
+}

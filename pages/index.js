@@ -4,6 +4,7 @@ import Startup from "../components/divisions/Startup";
 import { Fragment } from "react";
 import Fullstack from "../components/divisions/Fullstack";
 import Devices from "../components/divisions/Devices";
+import Customers from "../components/divisions/Customers";
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
       </Container>
       <Container fluid className="painted skew">
         <Devices />
+      </Container>
+      <Container>
+        <Customers />
       </Container>
     </Fragment>
   );
