@@ -6,7 +6,7 @@ const Customers = () => {
     <Row id="customers" className="mt-5">
       <Col className="text-center">
         <h2 className="mb-4">Customers&apos; Opinion</h2>
-        <Row xs={1} md={3} className="g-5">
+        <Row xs={1} md={3} className={`g-5 ${classes.cards}`}>
           <Col>
             <Card>
               <Card.Img
@@ -16,7 +16,7 @@ const Customers = () => {
               />
               <Card.Body>
                 <Card.Title as="h4">Malte Barth</Card.Title>
-                <h6 className={classes["sub-card"]}>
+                <h6>
                   Founding General Partner at
                   <NavLink href="https://www.bitkraft.vc/">
                     BITKRAFT Esports Ventures
@@ -40,7 +40,7 @@ const Customers = () => {
               />
               <Card.Body>
                 <Card.Title as="h4">Vida Brychcy</Card.Title>
-                <h6 className={classes["sub-card"]}>
+                <h6>
                   Director Product Engineering at
                   <NavLink href="https://www.chip.de/">CHIP Digital</NavLink>
                 </h6>
@@ -60,7 +60,7 @@ const Customers = () => {
               />
               <Card.Body>
                 <Card.Title as="h4">Dr. Lars Fink</Card.Title>
-                <h6 className={classes["sub-card"]}>
+                <h6>
                   Founder and Managing Director at
                   <NavLink href="https://www.get-in.de/">get in GmbH</NavLink>
                 </h6>
@@ -82,7 +82,7 @@ const Customers = () => {
               />
               <Card.Body>
                 <Card.Title as="h4">Dennis Kämker</Card.Title>
-                <h6 className={classes["sub-card"]}>
+                <h6>
                   Head of Corporate Services at
                   <NavLink href="https://www.wdp.de/">
                     Wachter Digital Partners
@@ -104,7 +104,7 @@ const Customers = () => {
               />
               <Card.Body>
                 <Card.Title as="h4">Andreas Durth</Card.Title>
-                <h6 className={classes["sub-card"]}>
+                <h6>
                   Chief Marketing Officer at
                   <NavLink href="https://www.studienkreis.de/">
                     Studienkreis GmbH

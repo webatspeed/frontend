@@ -3,8 +3,14 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-.sub-card {
-  line-height: 1rem;
+.cards {
+  h4, h6 {
+    color: $adrift-in-dreams !important;
+  }
+
+  h6 {
+    line-height: 1rem;
+  }
 
   a {
     color: $there-we-could-sail;
