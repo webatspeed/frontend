@@ -41,8 +41,8 @@ const Customers = () => {
                             <Card.Body>
                                 <Card.Title as="h4">Vida Brychcy</Card.Title>
                                 <h6>
-                                    Director Product Engineering at
-                                    <NavLink href="https://www.chip.de/">CHIP Digital</NavLink>
+                                    Director Product & Engineering at
+                                    <NavLink href="https://www.chip.de/">CHIP Digital GmbH</NavLink>
                                 </h6>
                                 <Card.Text>
                                     His good knowledge and a fast adaptation helped us to take a
@@ -61,8 +61,8 @@ const Customers = () => {
                             <Card.Body>
                                 <Card.Title as="h4">Dr. Lars Fink</Card.Title>
                                 <h6>
-                                    Founder and Managing Director at
-                                    <NavLink href="https://www.get-in.de/">get in GmbH</NavLink>
+                                    Managing Director at
+                                    <NavLink href="https://www.iesy.de/">iesy GmbH</NavLink>
                                 </h6>
                                 <Card.Text>
                                     We have successfully worked together with Torsten for the last
@@ -86,6 +86,10 @@ const Customers = () => {
                                     Head of Corporate Services at
                                     <NavLink href="https://www.wdp.de/">
                                         Wachter Digital Partners
+                                    </NavLink>
+                                    and
+                                    <NavLink href="https://intargia.com/">
+                                        Intargia Managementberatung GmbH
                                     </NavLink>
                                 </h6>
                                 <Card.Text>
