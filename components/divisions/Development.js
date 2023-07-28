@@ -42,36 +42,42 @@ const Development = () => {
                         size="3x"
                         className="flex-fill"
                         title="Java"
+                        transform="shrink-4"
                     />
                     <FontAwesomeIcon
                         icon={faLeaf}
                         size="2x"
                         className="flex-fill"
                         title="Spring Boot"
+                        transform="shrink-4"
                     />
                     <FontAwesomeIcon
                         icon={faPhp}
                         size="3x"
                         className="flex-fill"
                         title="PHP"
+                        transform="shrink-4"
                     />
                     <FontAwesomeIcon
                         icon={faLaravel}
                         size="3x"
                         className="flex-fill"
                         title="Laravel"
+                        transform="shrink-4"
                     />
                     <FontAwesomeIcon
                         icon={faReact}
                         size="3x"
                         className="flex-fill"
                         title="React.js"
+                        transform="shrink-4"
                     />
                     <FontAwesomeIcon
                         icon={faSymfony}
                         size="3x"
                         className="flex-fill"
                         title="Symfony"
+                        transform="shrink-4"
                     />
                 </Col>
             </Row>
