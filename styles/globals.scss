@@ -24,6 +24,11 @@ p {
   color: $adrift-in-dreams;
 }
 
+button {
+  background-color: #3B8686 !important;
+  border-color: #3B8686 !important;
+}
+
 .darker {
   background-color: $white-sand;
   margin: $spacer*13 0;
@@ -36,6 +41,17 @@ p {
   padding: $spacer*6 0 $spacer*5 0;
 
   p, h2 {
+    color: $mercury;
+  }
+}
+
+.colorful {
+  background: radial-gradient(circle at bottom right, $sunlit-sea 0, $there-we-could-sail 100%);
+  color: $white;
+  margin: $spacer*10 0;
+  padding: $spacer*6 0 $spacer*5 0;
+
+  p, div {
     color: $mercury;
   }
 }

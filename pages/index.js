@@ -5,6 +5,7 @@ import {Fragment} from "react";
 import Fullstack from "../components/divisions/Fullstack";
 import Devices from "../components/divisions/Devices";
 import Customers from "../components/divisions/Customers";
+import Recruiters from "../components/divisions/Recruiters";
 
 const Home = () => {
     return (
@@ -23,6 +24,9 @@ const Home = () => {
             </Container>
             <Container>
                 <Customers/>
+            </Container>
+            <Container fluid className="colorful skew">
+                <Recruiters/>
             </Container>
         </Fragment>
     );
