@@ -53,7 +53,7 @@ const Navigation = () => {
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={6} href="#contact">
+                            <NavLink tabIndex={6} href="#content">
                                 Content
                             </NavLink>
                         </NavItem>

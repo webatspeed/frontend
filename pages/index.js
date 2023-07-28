@@ -6,6 +6,7 @@ import Fullstack from "../components/divisions/Fullstack";
 import Devices from "../components/divisions/Devices";
 import Customers from "../components/divisions/Customers";
 import Recruiters from "../components/divisions/Recruiters";
+import Content from "../components/divisions/Content";
 
 const Home = () => {
     return (
@@ -27,6 +28,9 @@ const Home = () => {
             </Container>
             <Container fluid className="colorful skew">
                 <Recruiters/>
+            </Container>
+            <Container>
+                <Content/>
             </Container>
         </Fragment>
     );
