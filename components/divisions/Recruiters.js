@@ -5,7 +5,7 @@ const Recruiters = () => {
         <Container>
             <Row id="recruiters" className="mt-3 mb-2">
                 <Col lg={4} className="text-center">
-                    <Image src="/cv.svg" alt="cv" className="mb-3"/>
+                    <Image src="/cv.svg" alt="cv" className="mb-3 shadow-lg"/>
                 </Col>
                 <Col lg={8}>
                     <h2>Dear Recruiters,</h2>
