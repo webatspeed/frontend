@@ -1,4 +1,4 @@
-import {Col, Container, Image, Row} from "react-bootstrap";
+import {Button, Col, Container, Form, Image, Row} from "react-bootstrap";
 
 const Recruiters = () => {
     return (
@@ -14,23 +14,23 @@ const Recruiters = () => {
                         You&apos;ll never miss skill updates or new availability dates due to the emails we send
                         no more than three times a year.
                     </p>
-                    <form className="row g-2">
-                        <div className="col-8">
-                            <label htmlFor="email" className="visually-hidden-focusable">
+                    <Form className="row g-2">
+                        <Form.Group className="col-8">
+                            <Form.Label htmlFor="email" className="visually-hidden-focusable">
                                 Email address
-                            </label>
-                            <input type="email" className="form-control" id="email" disabled="disabled"
-                                   aria-describedby="emailHelp" placeholder="Email" tabIndex="1"/>
-                        </div>
-                        <div className="col-auto">
-                            <button type="submit" className="btn btn-primary" tabIndex="2" disabled="disables">
+                            </Form.Label>
+                            <Form.Control type="email" id="email" disabled="disabled"
+                                          aria-describedby="emailHelp" placeholder="Email" tabIndex="1"/>
+                        </Form.Group>
+                        <Form.Group className="col-auto">
+                            <Button type="submit" tabIndex="2" disabled="disables">
                                 Sign up
-                            </button>
-                        </div>
-                        <div className="col-12 form-text">
+                            </Button>
+                        </Form.Group>
+                        <Form.Text className="col-12">
                             We&apos;ll never share your email with anyone else. Sign off anytime.
-                        </div>
-                    </form>
+                        </Form.Text>
+                    </Form>
                 </Col>
             </Row>
         </Container>
