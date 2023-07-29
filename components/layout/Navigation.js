@@ -1,6 +1,7 @@
 import {Container, Image, Nav, Navbar, NavbarBrand, NavItem, NavLink,} from "react-bootstrap";
 import classes from "./Navigation.module.scss";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
+import Link from "next/link";
 
 const Navigation = () => {
     return (
@@ -11,6 +12,7 @@ const Navigation = () => {
             className={`shadow bg-light ${classes.navbar}`}
         >
             <Container>
+                <Link href="#" name="top"/>
                 <NavbarBrand className={classes.brand} href="#">
                     <Image
                         src="/logo_transparent_white.png"

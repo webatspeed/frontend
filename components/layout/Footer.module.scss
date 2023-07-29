@@ -1,5 +1,62 @@
 @import "../../styles/colors";
 
 .footer {
+  width: 100%;
   background-color: $adrift-in-dreams !important;
+
+  * {
+    color: $mercury;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  > img {
+    background-color: $white;
+  }
+
+  svg {
+    width: 42px;
+    height: 48px;
+  }
+
+  .up {
+    float: right;
+    background-color: $adrift-in-dreams;
+    padding: 2px 4px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: $there-we-could-sail;
+      border-color: $there-we-could-sail;
+    }
+  }
+
+  li {
+    background-color: transparent;
+    border: none;
+    color: $mercury;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+
+  .icons li {
+    padding: 0 14px 0 0;
+  }
+
+  .contact ul {
+    margin-bottom: 20px;
+
+    li {
+      padding: 0 0 1px 0;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
