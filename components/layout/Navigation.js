@@ -13,7 +13,7 @@ const Navigation = () => {
         >
             <Container>
                 <Link href="#" name="top"/>
-                <NavbarBrand className={classes.brand} href="#">
+                <NavbarBrand className={classes.brand} href="/">
                     <Image
                         src="/logo_transparent_white.png"
                         className={classes["image"]}
@@ -25,37 +25,37 @@ const Navigation = () => {
                 <NavbarCollapse>
                     <Nav as="ul" className={`ms-auto ${classes.nav}`}>
                         <NavItem as="li">
-                            <NavLink tabIndex={0} href="#dev">
+                            <NavLink tabIndex={0} href="/#dev">
                                 Development
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={1} href="#startup">
+                            <NavLink tabIndex={1} href="/#startup">
                                 Start-Up
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={2} href="#fullstack">
+                            <NavLink tabIndex={2} href="/#fullstack">
                                 Full Stack
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={3} href="#devices">
+                            <NavLink tabIndex={3} href="/#devices">
                                 Devices
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={4} href="#customers">
+                            <NavLink tabIndex={4} href="/#customers">
                                 Customers
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={5} href="#recruiters">
+                            <NavLink tabIndex={5} href="/#recruiters">
                                 Recruiters
                             </NavLink>
                         </NavItem>
                         <NavItem as="li">
-                            <NavLink tabIndex={6} href="#content">
+                            <NavLink tabIndex={6} href="/#content">
                                 Content
                             </NavLink>
                         </NavItem>

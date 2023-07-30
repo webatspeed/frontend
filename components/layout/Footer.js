@@ -52,10 +52,10 @@ const Footer = () => {
                         </ListGroup>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li">
-                                <Link href="#">Impressum / Imprint</Link>
+                                <Link href="/imprint">Impressum / Imprint</Link>
                             </ListGroup.Item>
                             <ListGroup.Item as="li">
-                                <Link href="#">Datenschutz / Privacy</Link>
+                                <Link href="/privacy">Datenschutz / Privacy</Link>
                             </ListGroup.Item>
                         </ListGroup>
                         <Link href="#top" role={"button"} className={classes.up}>
