@@ -10,7 +10,7 @@ const Devices = () => {
                         alt="devices"
                         className="w-75 mx-auto d-block"
                     />
-                    <h2 className="mt-5">Multiple Devices</h2>
+                    <h2 className="mt-5 inverted">Multiple Devices</h2>
                 </Col>
             </Row>
             <Row className="justify-content-center">

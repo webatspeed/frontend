@@ -8,7 +8,7 @@ const Recruiters = () => {
                     <Image src="/cv.svg" alt="cv" className="mb-3 shadow-lg"/>
                 </Col>
                 <Col lg={8}>
-                    <h2>Dear Recruiters,</h2>
+                    <h2 className="inverted">Dear Recruiters,</h2>
                     <p>
                         if your business is searching for IT experts, sign up for the CV newsletter.
                         You&apos;ll never miss skill updates or new availability dates due to the emails we send
