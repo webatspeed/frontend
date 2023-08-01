@@ -28,9 +28,15 @@ p {
   color: $adrift-in-dreams;
 }
 
-button {
-  background-color: #3B8686 !important;
-  border-color: #3B8686 !important;
+form button {
+  background-color: $there-we-could-sail !important;
+  border-color: $there-we-could-sail !important;
+
+  &:hover {
+    background-color: $adrift-in-dreams !important;
+    border-color: $adrift-in-dreams !important;
+    transition: all .2s ease-in-out;
+  }
 }
 
 .darker {
