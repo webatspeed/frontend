@@ -6,7 +6,7 @@ const Customers = () => {
         <Row id="customers" className="mt-5">
             <Col className="text-center">
                 <h2 className="mb-4">Customers&apos; Opinion</h2>
-                <Row xs={1} md={3} className={`g-5 ${classes.cards}`}>
+                <Row xs={1} md={2} lg={3} className={`g-5 ${classes.cards}`}>
                     <Col>
                         <Card>
                             <Card.Img
@@ -35,18 +35,23 @@ const Customers = () => {
                         <Card>
                             <Card.Img
                                 variant="top"
-                                src="/vida-brychcy.jpg"
-                                alt="Vida Brychcy"
+                                src="/andreas-durth.jpg"
+                                alt="Andreas Durth"
                             />
                             <Card.Body>
-                                <Card.Title as="h4">Vida Brychcy</Card.Title>
+                                <Card.Title as="h4">Andreas Durth</Card.Title>
                                 <h6>
-                                    Director Product & Engineering at
-                                    <NavLink href="https://www.chip.de/">CHIP Digital GmbH</NavLink>
+                                    Chief Marketing Officer at
+                                    <NavLink href="https://www.studienkreis.de/">
+                                        Studienkreis GmbH
+                                    </NavLink>
                                 </h6>
                                 <Card.Text>
-                                    His good knowledge and a fast adaptation helped us to take a
-                                    big step forward in the development of our systems.
+                                    Finally a developer who means &apos;done&apos; when he says
+                                    &quot;it&apos;s done&quot;: not only did it look
+                                    &apos;done&apos;, it also worked 100% bug-free. And all that
+                                    after being extraordinary fast - I can enthusiastically
+                                    recommend Torsten.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -77,6 +82,26 @@ const Customers = () => {
                         <Card>
                             <Card.Img
                                 variant="top"
+                                src="/vida-brychcy.jpg"
+                                alt="Vida Brychcy"
+                            />
+                            <Card.Body>
+                                <Card.Title as="h4">Vida Brychcy</Card.Title>
+                                <h6>
+                                    Director Product & Engineering at
+                                    <NavLink href="https://www.chip.de/">CHIP Digital GmbH</NavLink>
+                                </h6>
+                                <Card.Text>
+                                    His good knowledge and a fast adaptation helped us to take a
+                                    big step forward in the development of our systems.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card>
+                            <Card.Img
+                                variant="top"
                                 src="/dennis-kaemker.jpg"
                                 alt="Dennis Kämker"
                             />
@@ -95,31 +120,6 @@ const Customers = () => {
                                 <Card.Text>
                                     Meeting the delivery date and the budget we completely rely on
                                     Torsten.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card>
-                            <Card.Img
-                                variant="top"
-                                src="/andreas-durth.jpg"
-                                alt="Andreas Durth"
-                            />
-                            <Card.Body>
-                                <Card.Title as="h4">Andreas Durth</Card.Title>
-                                <h6>
-                                    Chief Marketing Officer at
-                                    <NavLink href="https://www.studienkreis.de/">
-                                        Studienkreis GmbH
-                                    </NavLink>
-                                </h6>
-                                <Card.Text>
-                                    Finally a developer who means &apos;done&apos; when he says
-                                    &quot;it&apos;s done&quot;: not only did it look
-                                    &apos;done&apos;, it also worked 100% bug-free. And all that
-                                    after being extraordinary fast - I can enthusiastically
-                                    recommend Torsten.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
