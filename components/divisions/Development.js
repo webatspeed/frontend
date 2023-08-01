@@ -3,10 +3,7 @@ import classes from "./Development.module.scss";
 import {Fragment} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons";
-import {faJava, faPhp} from "@fortawesome/free-brands-svg-icons";
-import {faLaravel} from "@fortawesome/free-brands-svg-icons/faLaravel";
-import {faSymfony} from "@fortawesome/free-brands-svg-icons/faSymfony";
-import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
+import {faJava, faLaravel, faPhp, faReact, faSymfony} from "@fortawesome/free-brands-svg-icons";
 
 const Development = () => {
     return (
