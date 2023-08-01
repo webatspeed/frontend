@@ -20,7 +20,7 @@ const Development = () => {
                         support through to overall project management.
                     </p>
                 </Col>
-                <Col lg={6} className="d-none d-md-block">
+                <Col lg={6} className="d-none d-md-block mb-md-5 mb-lg-0">
                     <Image
                         src="/logo_transparent_black.png"
                         alt="logo"
@@ -33,10 +33,7 @@ const Development = () => {
                     Implementation begins with a thoughtful choice of technology. We
                     specialize in...
                 </Col>
-                <Col
-                    lg={8}
-                    className="list-group list-group-horizontal align-items-center"
-                >
+                <Col lg={8} className="list-group list-group-horizontal align-items-center">
                     <FontAwesomeIcon
                         icon={faJava}
                         size="3x"
@@ -81,19 +78,14 @@ const Development = () => {
                     />
                 </Col>
             </Row>
-            <Row className="mb-5">
-                <Col
-                    lg={12}
-                    className={`text-center list-group list-group-horizontal align-items-center ${classes["tech-names"]}`}
-                >
-                    <span className="flex-fill">Java</span>
-                    <span className="flex-fill">Spring Boot</span>
-                    <span className="flex-fill">PHP</span>
-                    <span className="flex-fill">Laravel</span>
-                    <span className="flex-fill">React.js</span>
-                    <span className="flex-fill">Symfony</span>
-                    <span className="flex-fill">and more...</span>
-                </Col>
+            <Row className={`mb-5 mt-2 text-center ${classes["tech-names"]}`}>
+                <Col className="col-4 col-lg">Java</Col>
+                <Col className="col-4 col-lg">Spring&nbsp;Boot</Col>
+                <Col className="col-4 col-lg">PHP</Col>
+                <Col className="col-4 col-lg">Laravel</Col>
+                <Col className="col-4 col-lg">React.js</Col>
+                <Col className="col-4 col-lg">Symfony</Col>
+                <Col className="col-4 col-lg">and&nbsp;more...</Col>
             </Row>
         </Fragment>
     );
