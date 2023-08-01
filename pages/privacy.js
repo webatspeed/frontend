@@ -5,7 +5,7 @@ const Privacy = () => {
     return (
         <Fragment>
             <Container>
-                <Row id="privacy">
+                <Row id="privacy" className="contrasty">
                     <Col lg={12} className="mt-5">
                         <h1>Datenschutz&shy;erkl&auml;rung</h1>
                         <h2>1. Datenschutz auf einen Blick</h2>

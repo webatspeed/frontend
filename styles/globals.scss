@@ -39,6 +39,17 @@ button {
   padding: $spacer*6 0 $spacer*5 0;
 }
 
+.contrasty {
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  * {
+    color: $black !important;
+  }
+}
+
 .painted {
   background-color: $there-we-could-sail;
   margin: $spacer*10 0;

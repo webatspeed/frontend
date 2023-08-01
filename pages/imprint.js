@@ -5,7 +5,7 @@ const Imprint = () => {
     return (
         <Fragment>
             <Container>
-                <Row id="privacy">
+                <Row id="privacy" className="contrasty">
                     <Col lg={12} className="mt-5">
                         <h1>Impressum</h1>
                         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
