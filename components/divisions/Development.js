@@ -1,14 +1,13 @@
 import {Col, Image, Row} from "react-bootstrap";
 import classes from "./Development.module.scss";
-import {Fragment} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons";
 import {faJava, faLaravel, faPhp, faReact, faSymfony} from "@fortawesome/free-brands-svg-icons";
 
 const Development = () => {
     return (
-        <Fragment>
-            <Row id="dev" className={`mt-3 mt-md-5 ${classes["my-lg-10"]}`}>
+        <>
+            <Row id="dev" className="mt-3 mt-md-5 mb-3 mb-lg-5">
                 <Col lg={6} className="pe-0 pe-md-5">
                     <h2>Software Development for Hire</h2>
                     <p>
@@ -84,7 +83,7 @@ const Development = () => {
                 <Col className="col-4 col-lg">Symfony</Col>
                 <Col className="col-4 col-lg">and&nbsp;more...</Col>
             </Row>
-        </Fragment>
+        </>
     );
 };
 

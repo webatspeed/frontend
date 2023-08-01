@@ -41,7 +41,6 @@ form button {
 
 .darker {
   background-color: $white-sand;
-  margin: $spacer*13 0;
   padding: $spacer*6 0 $spacer*5 0;
 }
 
@@ -79,6 +78,10 @@ form button {
 
 .skew.container-fluid {
   transform: skewY(-4deg);
+  @include media-breakpoint-up(lg) {
+    margin-top: $spacer*9 !important;
+    margin-bottom: $spacer*9 !important;
+  }
 
   .container {
     transform: skewY(4deg);

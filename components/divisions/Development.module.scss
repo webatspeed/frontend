@@ -3,15 +3,8 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-.my-lg-10 {
-  @include media-breakpoint-up(xl) {
-    margin-top: $spacer*6 !important;
-    margin-bottom: $spacer*6 !important;
-  }
-}
-
 .tech {
-  background: #e3f3cc;
+  background: $tea-green;
   border-radius: 20px;
   padding: $spacer * 1.5;
   color: $there-we-could-sail;
