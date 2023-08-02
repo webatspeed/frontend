@@ -6,9 +6,9 @@ const Customers = () => {
         <Row id="customers" className="mt-5">
             <Col className="text-center">
                 <h2 className="mb-4">Customers&apos; Opinion</h2>
-                <Row xs={1} md={2} lg={3} className={`g-5 ${classes.cards}`}>
-                    <Col>
-                        <Card>
+                <Row xs={1} md={2} lg={3} className={classes.cards}>
+                    <Col className="mb-4">
+                        <Card className="h-100">
                             <Card.Img
                                 variant="top"
                                 src="/malte-barth.jpg"
@@ -31,8 +31,8 @@ const Customers = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
-                        <Card>
+                    <Col className="mb-4">
+                        <Card className="h-100">
                             <Card.Img
                                 variant="top"
                                 src="/andreas-durth.jpg"
@@ -56,8 +56,8 @@ const Customers = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
-                        <Card>
+                    <Col className="mb-4">
+                        <Card className="h-100">
                             <Card.Img
                                 variant="top"
                                 src="/lars-fink.jpg"
@@ -78,8 +78,8 @@ const Customers = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
-                        <Card>
+                    <Col className="mb-4">
+                        <Card className="h-100">
                             <Card.Img
                                 variant="top"
                                 src="/vida-brychcy.jpg"
@@ -98,8 +98,8 @@ const Customers = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col>
-                        <Card>
+                    <Col className="mb-4">
+                        <Card className="h-100">
                             <Card.Img
                                 variant="top"
                                 src="/dennis-kaemker.jpg"
