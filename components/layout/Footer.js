@@ -11,13 +11,13 @@ const Footer = () => {
             <Image src="landscape.png" fluid alt="landscape"/>
             <Container>
                 <Row className="pt-5 pb-5">
-                    <Col lg={4} className={classes.logo}>
+                    <Col lg={4} className={`mb-4 ${classes.logo}`}>
                         <Image src="/logo_transparent_white.png" alt="Web at Speed"/>
                         <br/>
                         <br/>
-                        &copy; 2013-{new Date().getFullYear()} Web at Speed. All rights reserved.
+                        &copy; {new Date().getFullYear()} Web at Speed. All rights reserved.
                     </Col>
-                    <Col lg={4}>
+                    <Col lg={4} className="mb-4">
                         <h4>Follow Us</h4>
                         <ListGroup horizontal className={classes.icons}>
                             <ListGroup.Item as="li">
