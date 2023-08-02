@@ -9,7 +9,7 @@ const Development = () => {
         <>
             <Row id="dev" className="mt-3 mt-md-5 mb-3 mb-lg-5">
                 <Col lg={6} className="pe-0 pe-md-5">
-                    <h2>Software Development for Hire</h2>
+                    <h2>Software Development for&nbsp;Hire</h2>
                     <p>
                         When it comes to web projects, saving time is often a key factor. We
                         provide software development in the web field ranging from simple
