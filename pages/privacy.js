@@ -128,7 +128,7 @@ const Privacy = () => {
                             10315 Berlin
                         </p>
                         <p>
-                            Telefon: +49 30 91524052<br/>
+                            Telefon: +49 30 86323207<br/>
                             E-Mail: torsten.krohn@webatspeed.com
                         </p>
                         <p>

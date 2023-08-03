@@ -48,7 +48,7 @@ const Footer = () => {
                             <ListGroup.Item as="li">Web at Speed GmbH<br/>Rosenfelder Ring 13, 10315
                                 Berlin</ListGroup.Item>
                             <ListGroup.Item as="li">torsten.krohn (at) webatspeed.com</ListGroup.Item>
-                            <ListGroup.Item as="li">+49 30 91524052</ListGroup.Item>
+                            <ListGroup.Item as="li">+49 30 86323207</ListGroup.Item>
                         </ListGroup>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li">

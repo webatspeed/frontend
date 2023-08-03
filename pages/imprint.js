@@ -24,7 +24,7 @@ const Imprint = () => {
                         </p>
                         <h2>Kontakt</h2>
                         <p>
-                            Telefon: +49 30 91524052<br/>
+                            Telefon: +49 30 86323207<br/>
                             E-Mail: torsten.krohn (at) webatspeed.com
                         </p>
                         <h2>Logo</h2>
