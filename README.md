@@ -1,4 +1,4 @@
-## Web at Speed website
+## Web at Speed frontend
 
 - React.js
 - Next.js
