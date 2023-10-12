@@ -1,12 +1,11 @@
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
 async function handler(req, res) {
-    const url = process.env.NEXT_PUBLIC_API_URL + '/v1/subscription';
-    const data = req.body;
-
-    if (req.method === 'POST') {
+    if (['POST', 'PUT', 'DELETE'].includes(req.method)) {
+        const url = process.env.NEXT_PUBLIC_API_URL + '/v1/subscription';
+        const data = req.body;
         const response = await fetch(url, {
-            method: 'POST',
+            method: req.method,
             body: JSON.stringify(data),
             headers: {
                 'Content-Type': 'application/json'

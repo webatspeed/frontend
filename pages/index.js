@@ -10,16 +10,40 @@ import Content from "../components/divisions/Content";
 
 const Home = () => {
 
-    const onSendEmail = async (enteredDetails) => {
+    const onSendEmail = async (details) => {
         const response = await fetch('/api/subscription', {
             method: 'POST',
-            body: JSON.stringify(enteredDetails),
+            body: JSON.stringify(details),
             headers: {
                 'Content-Type': 'application/json'
             }
         });
 
         return response.status === 201;
+    }
+
+    const onVerifyEmail = async (details) => {
+        const response = await fetch('/api/subscription', {
+            method: 'PUT',
+            body: JSON.stringify(details),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        return response.status === 204;
+    }
+
+    const onDeleteEmail = async (details) => {
+        const response = await fetch('/api/subscription', {
+            method: 'DELETE',
+            body: JSON.stringify(details),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        return response.status === 204;
     }
 
     return (
@@ -40,7 +64,7 @@ const Home = () => {
                 <Customers/>
             </Container>
             <Container fluid className="colorful skew">
-                <Recruiters onSendEmail={onSendEmail}/>
+                <Recruiters onSendEmail={onSendEmail} onVerifyEmail={onVerifyEmail} onDeleteEmail={onDeleteEmail}/>
             </Container>
             <Container>
                 <Content/>
