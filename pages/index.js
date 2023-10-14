@@ -19,7 +19,7 @@ const Home = () => {
             }
         });
 
-        return response.status === 201;
+        return [201, 429].includes(response.status);
     }
 
     const onVerifyEmail = async (details) => {
@@ -31,7 +31,7 @@ const Home = () => {
             }
         });
 
-        return response.status === 204;
+        return [204, 429].includes(response.status);
     }
 
     const onDeleteEmail = async (details) => {
