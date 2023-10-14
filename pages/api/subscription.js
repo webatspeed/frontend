@@ -6,16 +6,15 @@ const ONE_DAY = 1000 * 60 * 60 * 24;
 
 async function handler(req, res) {
 
-    const madeTooManyRequests = (method, email) => {
+    const madeTooManyRequests = (method, email, approve) => {
         if (method === 'DELETE') {
             return false;
         }
 
-        const key = email + method;
+        const key = email + method + approve;
         let numCalls = cache.get(key);
         cache.put(key, ++numCalls, ONE_DAY);
-        const callLimit = method === 'POST' ? 1 : 2;
-        return numCalls > callLimit;
+        return numCalls > 1;
     }
 
     const methodAllowed = (method) => {
@@ -35,7 +34,7 @@ async function handler(req, res) {
         return res.status(400).end();
     }
 
-    if (madeTooManyRequests(req.method, data.email) === true) {
+    if (madeTooManyRequests(req.method, data.email, data.approve) === true) {
         return res.status(429).end();
     }
 

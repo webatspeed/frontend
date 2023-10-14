@@ -71,7 +71,8 @@ const Recruiters = (props) => {
     const approveDetails = () => {
         return {
             email: searchParams.get("username"),
-            token: searchParams.get("uToken")
+            token: searchParams.get("uToken"),
+            approve: true
         }
     }
 
