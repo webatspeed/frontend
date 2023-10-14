@@ -5,28 +5,13 @@ import {useSearchParams} from 'next/navigation'
 const Recruiters = (props) => {
     const emailInputRef = useRef();
     const searchParams = useSearchParams();
-
-    const [showCreated, setShowCreated] = useState(false);
-    const [showConfirmed, setShowConfirmed] = useState(false);
-    const [showApproved, setShowApproved] = useState(false);
-    const [showDeleted, setShowDeleted] = useState(false);
-
-    const [showCreateError, setShowCreateError] = useState(false);
-    const [showUpdateError, setShowUpdateError] = useState(false);
+    const [showMessage, setMessage] = useState('');
 
     const submitHandler = async (event) => {
         event.preventDefault();
-
-        const enteredDetails = {
-            email: emailInputRef.current.value
-        };
-        const created = await props.onSendEmail(enteredDetails);
-
-        if (created === true) {
-            setShowCreated(true);
-        } else {
-            setShowCreateError(true);
-        }
+        await props.onSendEmail(enteredDetails()) ?
+            setMessage('created') :
+            setMessage('createError');
     }
 
     const emailLinkClicked = () => {
@@ -53,12 +38,13 @@ const Recruiters = (props) => {
     }
 
     const noMessageShowing = () => {
-        return showCreated === false
-            && showConfirmed === false
-            && showApproved === false
-            && showDeleted === false
-            && showCreateError === false
-            && showUpdateError === false;
+        return showMessage === '';
+    }
+
+    const enteredDetails = () => {
+        return {
+            email: emailInputRef.current.value
+        }
     }
 
     const confirmDetails = () => {
@@ -87,23 +73,17 @@ const Recruiters = (props) => {
         async function changeSubscription() {
             if (emailLinkClicked() && noMessageShowing()) {
                 if (confirming()) {
-                    if (await props.onVerifyEmail(confirmDetails()) === true) {
-                        setShowConfirmed(true);
-                    } else {
-                        setShowUpdateError(true);
-                    }
+                    await props.onVerifyEmail(confirmDetails()) ?
+                        setMessage('confirmed') :
+                        setMessage('updateError');
                 } else if (approving()) {
-                    if (await props.onVerifyEmail(approveDetails()) === true) {
-                        setShowApproved(true);
-                    } else {
-                        setShowUpdateError(true);
-                    }
+                    await props.onVerifyEmail(approveDetails()) ?
+                        setMessage('approved') :
+                        setMessage('updateError');
                 } else if (deleting()) {
-                    if (await props.onDeleteEmail(deleteDetails()) === true) {
-                        setShowDeleted(true);
-                    } else {
-                        setShowUpdateError(true);
-                    }
+                    await props.onDeleteEmail(deleteDetails()) ?
+                        setMessage('deleted') :
+                        setMessage('updateError');
                 }
             }
         }
@@ -129,33 +109,34 @@ const Recruiters = (props) => {
                             <Form.Label htmlFor="email" className="visually-hidden-focusable">
                                 Email address
                             </Form.Label>
-                            <Form.Control type="email" id="email" ref={emailInputRef} disabled={showCreated}
+                            <Form.Control type="email" id="email" ref={emailInputRef}
+                                          disabled={showMessage !== ''}
                                           aria-describedby="emailHelp" placeholder="Your Email" tabIndex="1"/>
                         </Form.Group>
                         <Form.Group className="col-auto">
-                            <Button type="submit" tabIndex="2" disabled={showCreated}>
+                            <Button type="submit" tabIndex="2" disabled={showMessage !== ''}>
                                 Sign up
                             </Button>
                         </Form.Group>
                         <Form.Text className="col-12">
                             We&apos;ll never share your email with anyone else. Sign off anytime.
                         </Form.Text>
-                        <Alert className="alert-success" show={showCreated}>
+                        <Alert className="alert-success" show={showMessage === 'created'}>
                             Success! Please check your emails to confirm this request.
                         </Alert>
-                        <Alert className="alert-success" show={showConfirmed}>
+                        <Alert className="alert-success" show={showMessage === 'confirmed'}>
                             Success! Please wait now as we&apos;ll need some minutes to approve your subscription.
                         </Alert>
-                        <Alert className="alert-success" show={showApproved}>
+                        <Alert className="alert-success" show={showMessage === 'approved'}>
                             Success! The subscriber has been approved.
                         </Alert>
-                        <Alert className="alert-success" show={showDeleted}>
+                        <Alert className="alert-success" show={showMessage === 'deleted'}>
                             We&apos;re sad to see you go. You have successfully unsubscribed from receiving emails.
                         </Alert>
-                        <Alert className="alert-danger" show={showCreateError}>
+                        <Alert className="alert-danger" show={showMessage === 'createError'}>
                             Error! Something went wrong. Did you sign up already?
                         </Alert>
-                        <Alert className="alert-danger" show={showUpdateError}>
+                        <Alert className="alert-danger" show={showMessage === 'updateError'}>
                             Error! Something went wrong.
                         </Alert>
                     </Form>
