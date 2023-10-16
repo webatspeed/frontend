@@ -3,6 +3,7 @@ import classes from "./Development.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons";
 import {faJava, faLaravel, faPhp, faReact, faSymfony} from "@fortawesome/free-brands-svg-icons";
+import {useId} from "react";
 
 const Development = () => {
     return (
@@ -36,6 +37,7 @@ const Development = () => {
                         className="flex-fill"
                         title="Java"
                         transform="shrink-4"
+                        titleId={useId()}
                     />
                     <FontAwesomeIcon
                         icon={faLeaf}
@@ -43,6 +45,7 @@ const Development = () => {
                         className="flex-fill"
                         title="Spring Boot"
                         transform="shrink-4"
+                        titleId={useId()}
                     />
                     <FontAwesomeIcon
                         icon={faPhp}
@@ -50,6 +53,7 @@ const Development = () => {
                         className="flex-fill"
                         title="PHP"
                         transform="shrink-4"
+                        titleId={useId()}
                     />
                     <FontAwesomeIcon
                         icon={faLaravel}
@@ -57,6 +61,7 @@ const Development = () => {
                         className="flex-fill"
                         title="Laravel"
                         transform="shrink-4"
+                        titleId={useId()}
                     />
                     <FontAwesomeIcon
                         icon={faReact}
@@ -64,6 +69,7 @@ const Development = () => {
                         className="flex-fill"
                         title="React.js"
                         transform="shrink-4"
+                        titleId={useId()}
                     />
                     <FontAwesomeIcon
                         icon={faSymfony}
@@ -71,6 +77,7 @@ const Development = () => {
                         className="flex-fill"
                         title="Symfony"
                         transform="shrink-4"
+                        titleId={useId()}
                     />
                 </Col>
             </Row>
