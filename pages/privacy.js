@@ -61,7 +61,46 @@ const Privacy = () => {
                         </p>
                         <h2>2. Hosting</h2>
                         <p>
-                            Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
+                            Wir hosten die Inhalte unserer Website bei folgenden Anbietern:
+                        </p>
+                        <h3>Amazon Web Services (AWS)</h3>
+                        <p>
+                            Anbieter ist die Amazon Web Services EMEA SARL, 38 Avenue John F. Kennedy, 1855 Luxemburg
+                            (nachfolgend AWS).
+                        </p>
+                        <p>
+                            Wenn Sie unsere Website besuchen, werden Ihre personenbezogenen Daten auf den Servern von
+                            AWS verarbeitet. Hierbei k&ouml;nnen auch personenbezogene Daten an das Mutterunternehmen
+                            von AWS in die USA &uuml;bermittelt werden. Die Daten&uuml;bertragung in die USA wird auf
+                            die EU-Standardvertragsklauseln gest&uuml;tzt. Details finden Sie hier:
+                            <a href="https://aws.amazon.com/de/blogs/security/aws-gdpr-data-processing-addendum/">
+                                https://aws.amazon.com/de/blogs/security/aws-gdpr-data-processing-addendum/</a> .
+                        </p>
+                        <p>
+                            Weitere Informationen entnehmen Sie der Datenschutzerkl&auml;rung AWS&apos;:<br/>
+                            <a href="https://aws.amazon.com/de/privacy/?nc1=f_pr">
+                                https://aws.amazon.com/de/privacy/?nc1=f_pr</a> .
+                        </p>
+                        <p>
+                            Die Verwendung von AWS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
+                            berechtigtes Interesse an einer m&ouml;glichst zuverl&auml;ssigen Darstellung unserer
+                            Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung
+                            ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit
+                            die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im
+                            Endger&auml;t des Nutzers (z. B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die
+                            Einwilligung ist jederzeit widerrufbar.
+                        </p>
+                        <p>
+                            Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework“
+                            (DPF). Der DPF ist ein &Uuml;bereinkommen zwischen der Europ&auml;ischen Union und den USA,
+                            der die Einhaltung europ&auml;ischer Datenschutzstandards bei Datenverarbeitungen in den USA
+                            gew&auml;hrleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich,
+                            diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom
+                            Anbieter unter folgendem Link: <a href="
+                            https://www.dataprivacyframework.gov/s/participant-search/participant-
+                            detail?contact=true&id=a2zt0000000TOWQAA4&status=Active">
+                            https://www.dataprivacyframework.gov/s/participant-search/participant-
+                            detail?contact=true&id=a2zt0000000TOWQAA4&status=Active</a>
                         </p>
                         <h3>Externes Hosting</h3>
                         <p>
@@ -303,7 +342,52 @@ const Privacy = () => {
                             Wenn die SSL- bzw. TLS-Verschl&uuml;sselung aktiviert ist, k&ouml;nnen die
                             Daten, die Sie an uns &uuml;bermitteln, nicht von Dritten mitgelesen werden.
                         </p>
-                        <h2>4. Newsletter</h2>
+                        <h2>4. Datenerfassung auf dieser Website</h2>
+                        <h3>Server-Log-Dateien</h3>
+                        <p>
+                            Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
+                            Server-Log- Dateien, die Ihr Browser automatisch an uns &uuml;bermittelt. Dies sind:
+                        </p>
+                        <ul>
+                            <li>Browsertyp und Browserversion</li>
+                            <li>verwendetes Betriebssystem</li>
+                            <li>Referrer URL</li>
+                            <li>Hostname des zugreifenden Rechners</li>
+                            <li>Uhrzeit der Serveranfrage</li>
+                            <li>IP-Adresse</li>
+                        </ul>
+                        <p>
+                            Eine Zusammenf&uuml;hrung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+                        </p>
+                        <p>
+                            Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der
+                            Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung
+                            und der Optimierung seiner Website – hierzu m&uuml;ssen die Server-Log-Files erfasst werden.
+                        </p>
+                        <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
+                        <p>
+                            Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive
+                            aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der
+                            Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht
+                            ohne Ihre Einwilligung weiter.
+                        </p>
+                        <p>
+                            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern
+                            Ihre Anfrage mit der Erf&uuml;llung eines Vertrags zusammenh&auml;ngt oder zur
+                            Durchf&uuml;hrung vorvertraglicher Ma&szlig;nahmen erforderlich ist. In allen &uuml;brigen
+                            Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven
+                            Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer
+                            Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist
+                            jederzeit widerrufbar.
+                        </p>
+                        <p>
+                            Die von Ihnen an uns per Kontaktanfragen &uuml;bersandten Daten verbleiben bei uns, bis Sie
+                            uns zur L&ouml;schung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der
+                            Zweck für die Datenspeicherung entf&auml;llt (z. B. nach abgeschlossener Bearbeitung Ihres
+                            Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche
+                            Aufbewahrungsfristen – bleiben unber&uuml;hrt.
+                        </p>
+                        <h2>5. Newsletter</h2>
                         <h3>Newsletter&shy;daten</h3>
                         <p>
                             Wenn Sie den auf der Website angebotenen Newsletter beziehen
@@ -342,65 +426,21 @@ const Privacy = () => {
                             nur f&uuml;r diesen Zweck verwendet und nicht mit anderen Daten zusammengef&uuml;hrt. Dies
                             dient sowohl Ihrem Interesse als auch unserem Interesse an der Einhaltung der gesetzlichen
                             Vorgaben beim Versand von Newslettern (berechtigtes Interesse im Sinne des Art. 6 Abs. 1
-                            lit. f DSGVO). Die Speicherung in der Blacklist ist zeitlich nicht befristet. <strong>Sie
+                            lit. f DSGVO). Die Speicherung in der Blacklist ist zeitlich nicht befristet. Sie
                             k&ouml;nnen der Speicherung widersprechen, sofern Ihre Interessen unser berechtigtes
-                            Interesse &uuml;berwiegen.</strong>
+                            Interesse &uuml;berwiegen.
                         </p>
-                        <h2>5. Plugins und Tools</h2>
-                        <h3>Google reCAPTCHA</h3>
+                        <h2>6. Plugins und Tools</h2>
+                        <h3>Font Awesome (lokales Hosting)</h3>
                         <p>
-                            Wir nutzen &bdquo;Google reCAPTCHA&ldquo; (im
-                            Folgenden &bdquo;reCAPTCHA&ldquo;) auf dieser Website. Anbieter ist die Google Ireland
-                            Limited (&bdquo;Google&ldquo;), Gordon House, Barrow Street, Dublin 4, Irland.
-                        </p>
-                        <p>
-                            Mit reCAPTCHA
-                            soll &uuml;berpr&uuml;ft werden, ob die Dateneingabe auf dieser Website (z.&nbsp;B. in einem
-                            Kontaktformular) durch einen Menschen oder durch ein automatisiertes Programm erfolgt.
-                            Hierzu
-                            analysiert reCAPTCHA das Verhalten des Websitebesuchers anhand verschiedener Merkmale. Diese
-                            Analyse beginnt automatisch, sobald der Websitebesucher die Website betritt. Zur Analyse
-                            wertet
-                            reCAPTCHA verschiedene Informationen aus (z.&nbsp;B. IP-Adresse, Verweildauer des
-                            Websitebesuchers auf der Website oder vom Nutzer get&auml;tigte Mausbewegungen). Die bei der
-                            Analyse erfassten Daten werden an Google weitergeleitet.
+                            Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Font Awesome. Font Awesome
+                            ist lokal installiert. Eine Verbindung zu Servern von Fonticons, Inc. findet dabei nicht
+                            statt.
                         </p>
                         <p>
-                            Die reCAPTCHA-Analysen laufen
-                            vollst&auml;ndig im Hintergrund. Websitebesucher werden nicht darauf hingewiesen, dass eine
-                            Analyse stattfindet.
-                        </p>
-                        <p>
-                            Die Speicherung und Analyse der Daten erfolgt auf Grundlage von Art.
-                            6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse daran, seine
-                            Webangebote vor missbr&auml;uchlicher automatisierter Aussp&auml;hung und vor SPAM zu
-                            sch&uuml;tzen. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die
-                            Verarbeitung
-                            ausschlie&szlig;lich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und &sect; 25 Abs. 1
-                            TTDSG,
-                            soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im
-                            Endger&auml;t des Nutzers (z.&nbsp;B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die
-                            Einwilligung ist jederzeit widerrufbar.
-                        </p>
-                        <p>
-                            Weitere Informationen zu Google reCAPTCHA
-                            entnehmen Sie den Google-Datenschutzbestimmungen und den Google Nutzungsbedingungen unter
-                            folgenden Links: <a href="https://policies.google.com/privacy?hl=de" target="_blank"
-                                                rel="noopener noreferrer">https://policies.google.com/privacy?hl=de</a> und <a
-                            href="https://policies.google.com/terms?hl=de" target="_blank"
-                            rel="noopener noreferrer">https://policies.google.com/terms?hl=de</a>.
-                        </p>
-                        <p>
-                            Das Unternehmen verf&uuml;gt &uuml;ber eine Zertifizierung nach dem &bdquo;EU-US Data
-                            Privacy
-                            Framework&ldquo; (DPF). Der DPF ist ein &Uuml;bereinkommen zwischen der Europ&auml;ischen
-                            Union und den USA, der die Einhaltung europ&auml;ischer Datenschutzstandards bei
-                            Datenverarbeitungen in den USA gew&auml;hrleisten soll. Jedes nach dem DPF zertifizierte
-                            Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen
-                            hierzu erhalten Sie vom Anbieter unter folgendem Link: <a
-                            href="https://www.dataprivacyframework.gov/s/participant-search/participant-detail?contact=true&id=a2zt000000001L5AAI&status=Active"
-                            target="_blank"
-                            rel="noopener noreferrer">DataPrivacyFramework.gov</a>
+                            Weitere Informationen zu Font Awesome finden Sie in der Datenschutzerkl&auml;rung f&uuml;r
+                            Font Awesome unter: <a
+                            href="https://fontawesome.com/privacy">https://fontawesome.com/privacy</a>.
                         </p>
                         <p>
                             Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
