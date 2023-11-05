@@ -2,7 +2,7 @@ import {Col, Image, Row} from "react-bootstrap";
 import classes from "./Development.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLeaf} from "@fortawesome/free-solid-svg-icons";
-import {faJava, faLaravel, faPhp, faReact, faSymfony} from "@fortawesome/free-brands-svg-icons";
+import {faJava, faLaravel, faPhp, faReact, faAws} from "@fortawesome/free-brands-svg-icons";
 import {useId} from "react";
 
 const Development = () => {
@@ -48,6 +48,22 @@ const Development = () => {
                         titleId={useId()}
                     />
                     <FontAwesomeIcon
+                        icon={faReact}
+                        size="3x"
+                        className="flex-fill"
+                        title="React.js"
+                        transform="shrink-4"
+                        titleId={useId()}
+                    />
+                    <FontAwesomeIcon
+                        icon={faAws}
+                        size="3x"
+                        className="flex-fill"
+                        title="Symfony"
+                        transform="shrink-4"
+                        titleId={useId()}
+                    />
+                    <FontAwesomeIcon
                         icon={faPhp}
                         size="3x"
                         className="flex-fill"
@@ -63,31 +79,15 @@ const Development = () => {
                         transform="shrink-4"
                         titleId={useId()}
                     />
-                    <FontAwesomeIcon
-                        icon={faReact}
-                        size="3x"
-                        className="flex-fill"
-                        title="React.js"
-                        transform="shrink-4"
-                        titleId={useId()}
-                    />
-                    <FontAwesomeIcon
-                        icon={faSymfony}
-                        size="3x"
-                        className="flex-fill"
-                        title="Symfony"
-                        transform="shrink-4"
-                        titleId={useId()}
-                    />
                 </Col>
             </Row>
             <Row className={`mb-5 mt-2 text-center ${classes["tech-names"]}`}>
                 <Col className="col-4 col-lg">Java</Col>
                 <Col className="col-4 col-lg">Spring&nbsp;Boot</Col>
+                <Col className="col-4 col-lg">React.js</Col>
+                <Col className="col-4 col-lg">AWS</Col>
                 <Col className="col-4 col-lg">PHP</Col>
                 <Col className="col-4 col-lg">Laravel</Col>
-                <Col className="col-4 col-lg">React.js</Col>
-                <Col className="col-4 col-lg">Symfony</Col>
                 <Col className="col-4 col-lg">and&nbsp;more...</Col>
             </Row>
         </>
