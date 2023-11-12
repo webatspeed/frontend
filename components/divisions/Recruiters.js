@@ -109,7 +109,7 @@ const Recruiters = (props) => {
                             <Form.Label htmlFor="email" className="visually-hidden-focusable">
                                 Email address
                             </Form.Label>
-                            <Form.Control type="email" id="email" ref={emailInputRef}
+                            <Form.Control type="email" id="email" ref={emailInputRef} autoComplete="email"
                                           disabled={showMessage !== ''}
                                           aria-describedby="emailHelp" placeholder="Your Email" tabIndex="1"/>
                         </Form.Group>
