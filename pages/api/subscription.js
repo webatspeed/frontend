@@ -6,7 +6,7 @@ const ONE_DAY = 1000 * 60 * 60 * 24;
 
 async function handler(req, res) {
 
-    const madeTooManyRequests = (method, email, approve) => {
+    const madeTooManyRequestsWithThisEmail = (method, email, approve) => {
         if (method === 'DELETE') {
             return false;
         }
@@ -15,6 +15,17 @@ async function handler(req, res) {
         let numCalls = cache.get(key);
         cache.put(key, ++numCalls, ONE_DAY);
         return numCalls > 1;
+    }
+
+    const madeTooManyInitialRequests = (method, ip) => {
+        if (method !== 'POST') {
+            return false;
+        }
+
+        const key = ip + method;
+        let numCalls = cache.get(key);
+        cache.put(key, ++numCalls, ONE_DAY);
+        return numCalls > 2;
     }
 
     const methodAllowed = (method) => {
@@ -34,7 +45,11 @@ async function handler(req, res) {
         return res.status(400).end();
     }
 
-    if (madeTooManyRequests(req.method, data.email, data.approve) === true) {
+    if (madeTooManyInitialRequests(req.method, req.socket.remoteAddress) === true) {
+        return res.status(429).end();
+    }
+
+    if (madeTooManyRequestsWithThisEmail(req.method, data.email, data.approve) === true) {
         return res.status(429).end();
     }
 
