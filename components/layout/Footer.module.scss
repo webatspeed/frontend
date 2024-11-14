@@ -1,11 +1,11 @@
-@import "../../styles/colors";
+@use "../../styles/colors";
 
 .footer {
   width: 100%;
-  background-color: $adrift-in-dreams !important;
+  background-color: colors.$adrift-in-dreams !important;
 
   * {
-    color: $mercury;
+    color: colors.$mercury;
   }
 
   h4 {
@@ -13,7 +13,7 @@
   }
 
   > img {
-    background-color: $white;
+    background-color: colors.$white;
   }
 
   svg {
@@ -23,21 +23,21 @@
 
   .up {
     float: right;
-    background-color: $adrift-in-dreams;
+    background-color: colors.$adrift-in-dreams;
     padding: 2px 4px;
     border-radius: 5px;
     transition: all .2s ease-in-out;
 
     &:hover {
-      background-color: $there-we-could-sail;
-      border-color: $there-we-could-sail;
+      background-color: colors.$there-we-could-sail;
+      border-color: colors.$there-we-could-sail;
     }
   }
 
   li {
     background-color: transparent;
     border: none;
-    color: $mercury;
+    color: colors.$mercury;
   }
 
   .logo img {
