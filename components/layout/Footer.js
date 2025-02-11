@@ -2,7 +2,11 @@ import {Col, Container, Image, ListGroup, Row} from "react-bootstrap";
 import classes from "./Footer.module.scss";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebookSquare, faLinkedin, faTwitterSquare, faXingSquare} from "@fortawesome/free-brands-svg-icons";
+import {
+    faLinkedin,
+    faSquareBluesky,
+    faXingSquare
+} from "@fortawesome/free-brands-svg-icons";
 import {faChevronUp} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
@@ -31,13 +35,8 @@ const Footer = () => {
                                 </a>
                             </ListGroup.Item>
                             <ListGroup.Item as="li">
-                                <a href="https://www.facebook.com/webatspeed/">
-                                    <FontAwesomeIcon icon={faFacebookSquare}/>
-                                </a>
-                            </ListGroup.Item>
-                            <ListGroup.Item as="li">
-                                <a href="https://twitter.com/webatspeed">
-                                    <FontAwesomeIcon icon={faTwitterSquare}/>
+                                <a href="https://bsky.app/profile/torstenkrohn.bsky.social">
+                                    <FontAwesomeIcon icon={faSquareBluesky}/>
                                 </a>
                             </ListGroup.Item>
                         </ListGroup>
