@@ -1,8 +1,8 @@
 import {Col, Image, Row} from "react-bootstrap";
 import classes from "./Development.module.scss";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLeaf} from "@fortawesome/free-solid-svg-icons";
-import {faJava, faLaravel, faPhp, faReact, faAws} from "@fortawesome/free-brands-svg-icons";
+import {SiAngular, SiElasticsearch, SiSpringboot, SiTerraform} from "react-icons/si";
+import {FaAws} from "react-icons/fa";
+import {RiJavaLine} from "react-icons/ri";
 import {useId} from "react";
 
 const Development = () => {
@@ -31,63 +31,57 @@ const Development = () => {
                     specialize in...
                 </Col>
                 <Col lg={8} className="list-group list-group-horizontal align-items-center">
-                    <FontAwesomeIcon
-                        icon={faJava}
-                        size="3x"
+                    <RiJavaLine
+                        size="1.8em"
                         className="flex-fill"
                         title="Java"
                         transform="shrink-4"
-                        titleId={useId()}
+                        titleid={useId()}
                     />
-                    <FontAwesomeIcon
-                        icon={faLeaf}
-                        size="2x"
+                    <SiSpringboot
+                        size="1.8em"
                         className="flex-fill"
                         title="Spring Boot"
                         transform="shrink-4"
-                        titleId={useId()}
+                        titleid={useId()}
                     />
-                    <FontAwesomeIcon
-                        icon={faReact}
-                        size="3x"
+                    <FaAws
+                        size="1.8em"
                         className="flex-fill"
-                        title="React.js"
+                        title="AWS"
                         transform="shrink-4"
-                        titleId={useId()}
+                        titleid={useId()}
                     />
-                    <FontAwesomeIcon
-                        icon={faAws}
-                        size="3x"
+                    <SiAngular
+                        size="1.8em"
                         className="flex-fill"
-                        title="Symfony"
+                        title="Angular"
                         transform="shrink-4"
-                        titleId={useId()}
+                        titleid={useId()}
                     />
-                    <FontAwesomeIcon
-                        icon={faPhp}
-                        size="3x"
+                    <SiTerraform
+                        size="1.8em"
                         className="flex-fill"
-                        title="PHP"
+                        title="Terraform"
                         transform="shrink-4"
-                        titleId={useId()}
+                        titleid={useId()}
                     />
-                    <FontAwesomeIcon
-                        icon={faLaravel}
-                        size="3x"
+                    <SiElasticsearch
+                        size="1.8em"
                         className="flex-fill"
-                        title="Laravel"
+                        title="Elasticsearch"
                         transform="shrink-4"
-                        titleId={useId()}
+                        titleid={useId()}
                     />
                 </Col>
             </Row>
             <Row className={`mb-5 mt-2 text-center ${classes["tech-names"]}`}>
                 <Col className="col-4 col-lg">Java</Col>
                 <Col className="col-4 col-lg">Spring&nbsp;Boot</Col>
-                <Col className="col-4 col-lg">React.js</Col>
                 <Col className="col-4 col-lg">AWS</Col>
-                <Col className="col-4 col-lg">PHP</Col>
-                <Col className="col-4 col-lg">Laravel</Col>
+                <Col className="col-4 col-lg">Angular</Col>
+                <Col className="col-4 col-lg">Terraform</Col>
+                <Col className="col-4 col-lg">Elastic</Col>
                 <Col className="col-4 col-lg">and&nbsp;more...</Col>
             </Row>
         </>

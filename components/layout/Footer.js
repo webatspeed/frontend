@@ -1,13 +1,9 @@
 import {Col, Container, Image, ListGroup, Row} from "react-bootstrap";
 import classes from "./Footer.module.scss";
 import Link from "next/link";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    faLinkedin,
-    faSquareBluesky,
-    faXingSquare
-} from "@fortawesome/free-brands-svg-icons";
-import {faChevronUp} from "@fortawesome/free-solid-svg-icons";
+import {FaChevronUp, FaLinkedin} from "react-icons/fa";
+import {FaSquareXing} from "react-icons/fa6";
+import {SiBluesky} from "react-icons/si";
 
 const Footer = () => {
     return (
@@ -26,17 +22,17 @@ const Footer = () => {
                         <ListGroup horizontal className={classes.icons}>
                             <ListGroup.Item as="li">
                                 <a href="https://xing.to/webatspeed">
-                                    <FontAwesomeIcon icon={faXingSquare}/>
+                                    <FaSquareXing/>
                                 </a>
                             </ListGroup.Item>
                             <ListGroup.Item as="li">
                                 <a href="https://linkedin.com/in/torstenkrohn">
-                                    <FontAwesomeIcon icon={faLinkedin}/>
+                                    <FaLinkedin/>
                                 </a>
                             </ListGroup.Item>
                             <ListGroup.Item as="li">
                                 <a href="https://bsky.app/profile/torstenkrohn.bsky.social">
-                                    <FontAwesomeIcon icon={faSquareBluesky}/>
+                                    <SiBluesky/>
                                 </a>
                             </ListGroup.Item>
                         </ListGroup>
@@ -58,7 +54,7 @@ const Footer = () => {
                             </ListGroup.Item>
                         </ListGroup>
                         <Link href="#top" role={"button"} className={classes.up}>
-                            <FontAwesomeIcon icon={faChevronUp}/>
+                            <FaChevronUp/>
                         </Link>
                     </Col>
                 </Row>
