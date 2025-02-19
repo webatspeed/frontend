@@ -35,42 +35,36 @@ const Development = () => {
                         size="1.8em"
                         className="flex-fill"
                         title="Java"
-                        transform="shrink-4"
                         titleid={useId()}
                     />
                     <SiSpringboot
                         size="1.8em"
                         className="flex-fill"
                         title="Spring Boot"
-                        transform="shrink-4"
                         titleid={useId()}
                     />
                     <FaAws
                         size="1.8em"
                         className="flex-fill"
                         title="AWS"
-                        transform="shrink-4"
                         titleid={useId()}
                     />
                     <SiAngular
                         size="1.8em"
                         className="flex-fill"
                         title="Angular"
-                        transform="shrink-4"
                         titleid={useId()}
                     />
                     <SiTerraform
                         size="1.8em"
                         className="flex-fill"
                         title="Terraform"
-                        transform="shrink-4"
                         titleid={useId()}
                     />
                     <SiElasticsearch
                         size="1.8em"
                         className="flex-fill"
                         title="Elasticsearch"
-                        transform="shrink-4"
                         titleid={useId()}
                     />
                 </Col>
