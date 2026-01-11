@@ -21,7 +21,7 @@ const Footer = () => {
                         <h4>Follow Us</h4>
                         <ListGroup horizontal className={classes.icons}>
                             <ListGroup.Item as="li">
-                                <a href="https://xing.to/webatspeed">
+                                <a href="https://www.xing.com/profile/Torsten_Krohn">
                                     <FaSquareXing/>
                                 </a>
                             </ListGroup.Item>
